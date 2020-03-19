@@ -1,16 +1,10 @@
 package edu.eci.arsw.airportsfinder;
 
-import javafx.util.Pair;
 import org.springframework.stereotype.Service;
-
-import java.util.Calendar;
-import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.ConcurrentHashMap;
 import com.mashape.unirest.http.JsonNode;
-
-import javax.swing.*;
 
 @Service
 public class AirportrsFinderCache {
