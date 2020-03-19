@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>edu.eci.arsw.msgbroker</groupId>
-    <artifactId>websockets-msbroker-example</artifactId>
+    <groupId>edu.eci.arsw.airportsfinder</groupId>
+    <artifactId>airportsfinder</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>websockets-msbroker-example</name>
+    <name>airportsfinder</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
@@ -37,6 +37,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+            <version>2.1.6.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.webjars</groupId>
@@ -62,8 +63,31 @@
             <groupId>org.webjars</groupId>
             <artifactId>jquery</artifactId>
             <version>3.1.0</version>
-        </dependency>                
-                                                                
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.mashape.unirest/unirest-java -->
+        <dependency>
+            <groupId>com.mashape.unirest</groupId>
+            <artifactId>unirest-java</artifactId>
+            <version>1.4.9</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>5.2.4.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+
     </dependencies>
 
     <build>

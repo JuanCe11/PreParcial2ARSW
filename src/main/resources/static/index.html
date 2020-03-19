@@ -20,23 +20,34 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="/webjars/jquery/jquery.min.js"></script>
-        <script src="/webjars/sockjs-client/sockjs.min.js"></script>
-        <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
         <script src="/app.js"></script>
+        <script src="/map.js"></script>
+        <link rel="stylesheet" href="styles.css"/>
 
     </head>
 
 
     
-    <body onload="app.init()">
-
-        X:<input id="x" type="number"/>
-        Y:<input id="y" type="number"/>        
-        <button onclick="app.publishPoint($('#x').val(),$('#y').val())">Send point</button>
-        </br>
-        <input type="text" placeholder="id Blueprint" id="idBlueprint">
-        <button type="button" onclick="app.connect()" >Connect</button>
-        <canvas id="canvas" width="800" height="600" style="border:1px solid #000000;" ></canvas>
+    <body onload="initMap()">
+        <div>
+            <h2>Welcome to airports finder!</h2>
+            <p>
+                <input id="airport" type="text" placeholder="airport">
+                <button type="button" onclick="app.find(airport.value)">Find</button>
+            </p>
+            <table>
+                <thread>
+                    <tr>
+                        <th scope="col">Codigo aeropuerto</th>
+                        <th scope="col">Nombre del aeropuerto</th>
+                        <th scope="col">Ubicación</th>
+                        <th scope="col">Codigo del pais</th>
+                    </tr>
+                </thread>
+                <tbody id ="filasAeropuerto"></tbody>
+            </table>
+            <div id="map"></div>
+        </div>
     </body>
 </html>
