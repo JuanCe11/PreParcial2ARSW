@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 @RequestMapping(value = "/airports")
 public class AirportsFinderController {
     @Autowired
-    AirportrsFinderServices airportrsFinderServices;
+    AirportsFinderServices airportrsFinderServices;
 
     @RequestMapping(path ="/{name}",method = RequestMethod.GET)
     public ResponseEntity<?> GetAllAirports(@PathVariable("name")String name){

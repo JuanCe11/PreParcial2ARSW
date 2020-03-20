@@ -7,12 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service("airportFinder")
-public class AirportrsFinderServices {
+public class AirportsFinderServices {
     @Autowired
     HttpConnectionService http;
 
     @Autowired
-    AirportrsFinderCache cache;
+    AirportsFinderCache cache;
 
     public JsonNode airpotrsByName(String name) throws UnirestException {
         JsonNode res = cache.getByName(name);

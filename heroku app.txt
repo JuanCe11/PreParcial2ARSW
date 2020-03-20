@@ -1,0 +1,4 @@
+heroku login
+--entrar a la carpeta del proyecto--
+heroku create 
+git push heroku master

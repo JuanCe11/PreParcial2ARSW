@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import com.mashape.unirest.http.JsonNode;
 
 @Service
-public class AirportrsFinderCache {
+public class AirportsFinderCache {
     private ConcurrentHashMap<String, JsonNode> airports = new ConcurrentHashMap<>();
 
     public JsonNode getByName(String name){
