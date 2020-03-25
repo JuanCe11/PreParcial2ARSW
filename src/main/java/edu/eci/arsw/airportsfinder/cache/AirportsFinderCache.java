@@ -1,4 +1,4 @@
-package edu.eci.arsw.airportsfinder;
+package edu.eci.arsw.airportsfinder.cache;
 
 import org.springframework.stereotype.Service;
 import java.util.Timer;
